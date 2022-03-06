@@ -32,3 +32,5 @@ mypatient 我的病人模块
 personal 个人信息模块
 repice 处方管理模块
 report 报告查询模块
+### 项目介绍
+> 本项目是大创项目的远程分支
