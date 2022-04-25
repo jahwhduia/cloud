@@ -19,7 +19,7 @@
                 <!-- 当前激活的菜单选项是当前的路径，保证刷新的时候激活样式不掉 -->
                 <!-- <el-menu-item index="/doctor/patient">
                   <i class="el-icon-s-custom"></i>
-                  <span slot="title">我的病人</span>
+                  <span slot="title">我的病人1</span>
                 </el-menu-item> -->
                 <el-menu-item index="/doctor/cottoms">
                   <i class="el-icon-s-order"></i>
