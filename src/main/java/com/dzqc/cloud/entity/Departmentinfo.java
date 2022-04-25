@@ -11,7 +11,7 @@ public class Departmentinfo implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public Departmentinfo(Integer id, String departmentname, Integer institutionId) {
+    public Departmentinfo (Integer id, String departmentname, Integer institutionId) {
         this.id = id;
         this.departmentname = departmentname;
         this.institutionId = institutionId;

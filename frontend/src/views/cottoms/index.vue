@@ -2,13 +2,13 @@
   <div id="cottoms">
     <div class="nav">
       <span @click="check" :class="['tab', flag == 'check' ? 'check_tab' : '']">
-        {{ change ? "病例查看" : "电子病例" }}</span
+        {{ change ? "病例查看" : "我的患者" }}</span
       >
       <span
         v-if="!change"
         :class="['tab', flag == 'add' ? 'check_tab' : '']"
         @click="add"
-        >添加病例</span
+        >添加患者</span
       >
     </div>
     <router-view class="content"> </router-view>

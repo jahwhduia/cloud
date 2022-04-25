@@ -3,40 +3,64 @@
     <div class="login_img">
       <div class="login_tit">
         <div></div>
-        <div>医疗管理后台</div>
+        <div>高血压家庭健康管理</div>
         <div></div>
       </div>
     </div>
     <div class="login_con">
       <div class="login_form">
-        <h3>医生登录</h3>
+        <h3>登录</h3>
         <el-form :label-position="labelPosition" :model="form">
           <el-form-item>
             <el-input
               class="phone"
               prefix-icon="el-icon-user-solid"
               v-model="form.phone"
-              placeholder="请输入手机号码"
+              placeholder="请输入账号/手机号"
             >
             </el-input>
-            <el-button class="getnum" round type="primary" @click="postCode"
-              >获取验证码</el-button
-            >
+            <el-button class="getnum" round type="primary" @click="postCode">获取验证码</el-button>
+            <!-- 2022年4月24日11:07:29注释 -->
           </el-form-item>
+          <el-form-item>
+            <el-input
+              class="password"
+              prefix-icon="el-icon-s-goods"
+              suffix-icon="el-icon-view"
+              type="password"
+              v-model="form.password"
+              placeholder="请输入密码"
+              @keyup.enter.native="handleSubmit('formInline')"
+            ></el-input>
+         </el-form-item>
           <el-form-item>
             <el-input
               prefix-icon="el-icon-s-goods"
               suffix-icon="el-icon-view"
               v-model="form.code"
-              placeholder="请输入获取到的验证码"
+              placeholder="请输入获取到的验证码" 
             ></el-input>
-            <!-- 在input中放入小图标 -->
           </el-form-item>
-          <!-- <h4>忘记密码?</h4> -->
           <el-form-item>
-            <el-button class="login" round type="primary" @click="login"
-              >登陆</el-button
+            <el-select 
+             v-model="form.fileOrgType" 
+             placeholder="请选择登录角色"
             >
+            <!-- 这里还需要后端的接口进行配合，每个角色分配一个value -->
+            <el-option label="医生" value="Y"> </el-option>
+            <el-option label="普通用户" value="N"></el-option>
+            <el-option label="管理员" value="N"></el-option>
+            </el-select>
+            <!-- 在input中放入小图标 -->
+            <el-checkbox v-model="single">记住密码</el-checkbox> 
+            <!-- <h4 @click="register">没有账号？点击注册</h4> -->
+            <!-- <div class="passwordForget">
+              <h4>忘记密码?</h4>
+                 </div>
+                 <div class="registerLogin">
+                 <h4 @click="register">没有账号？点击注册</h4>
+                 </div> -->
+                 <el-button class="login" round type="primary" @click="login">登陆</el-button>
           </el-form-item>
         </el-form>
         <!-- 使用element-ui定义form表单，在样式上做一些调整 -->
@@ -110,7 +134,7 @@ html {
   display: flex;
   justify-content: left;
   align-items: center;
-  min-height: 550px;
+  min-height: 700px;
   min-width: 1200px;
   .login_img {
     height: 100%;
@@ -196,3 +220,4 @@ html {
   }
 }
 </style>
+

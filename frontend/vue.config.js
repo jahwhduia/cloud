@@ -7,8 +7,8 @@ module.exports = {
 
     productionSourceMap: false,
     devServer: {
-        // 配置webpack-dev-serve的行为 （webpack启动的本地服务器的行为）
-        // 所有devserve的选项都支持
+        //配置webpack-dev-serve的行为 （webpack启动的本地服务器的行为）
+        //所有devserve的选项都支持
         host: "0.0.0.0",
         port: "8080",
         disableHostCheck: true,
@@ -21,8 +21,10 @@ module.exports = {
             //如果你的前端应用和后端 API 服务器没有运行在同一个主机上，你需要在开发环境下将 API 请求代理到 API 服务器
 
             "/api": {
-                target: "http://39.100.14.147",
-                // target: "http://192.168.10.103",
+                //target: "http://39.99.83.162",
+                //target:  'http://119.23.142.91:8083',
+                target:  'http://localhost:8083',
+               
 
                 changeOrigin: true,
                 //上面的参数列表中有一个changeOrigin参数, 是一个布尔值, 设置为true, 本地就会虚拟一个服务器接收你的请求并代你发送该请求

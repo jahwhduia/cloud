@@ -1,5 +1,5 @@
 <template>
-  <div id="checkReport">
+  <div id="check_report">
     <el-form :inline="true" :model="formInline" class="demo-form-inline">
       <el-form-item>
         <el-input

@@ -30,6 +30,16 @@
                     </el-select>
                   </el-form-item>
                 </el-col>
+                <!-- <el-row class="formInline">
+                <el-col :span="11">
+                  <el-form-item label="医院级别" prop="sex">
+                    <el-select v-model="detailForm.sex" placeholder="医院级别">
+                      <el-option label="三甲" value="三甲"></el-option>
+                      <el-option label="二甲" value="二甲"></el-option>
+                    </el-select>
+                  </el-form-item>
+                </el-col>
+              </el-row> -->
               </el-row>
 
               <el-form-item label="出生日期">
@@ -52,11 +62,11 @@
                 </el-col>
                 <el-col :span="2" style="text-align:center;">&nbsp;月</el-col>
               </el-form-item>
-              <el-form-item label="联系电话" prop="name">
-                <el-input v-model="detailForm.name"></el-input>
+              <el-form-item label="联系电话" prop="phone">
+                <el-input v-model="detailForm.phone"></el-input>
               </el-form-item>
-              <el-form-item label="地址" prop="name">
-                <el-input v-model="detailForm.name"></el-input>
+              <el-form-item label="地址" prop="dizhi">
+                <el-input v-model="detailForm.dizhi"></el-input>
               </el-form-item>
             </el-form>
           </el-col>
@@ -71,13 +81,13 @@
               label-width="100px"
               class="demo-ruleForm"
             >
-              <el-form-item label="就职医院" prop="name">
-                <el-input v-model="detailForm.name"></el-input>
+              <el-form-item label="就职医院" prop="yiyuan">
+                <el-input v-model="detailForm.yiyuan"></el-input>
               </el-form-item>
               <el-row class="formInline">
                 <el-col :span="11">
-                  <el-form-item label="医院级别" prop="sex">
-                    <el-select v-model="detailForm.sex" placeholder="医院级别">
+                  <el-form-item label="医院级别" prop="jibie">
+                    <el-select v-model="detailForm.jibie" placeholder="医院级别">
                       <el-option label="三甲" value="三甲"></el-option>
                       <el-option label="二甲" value="二甲"></el-option>
                     </el-select>
@@ -102,11 +112,11 @@
                 </el-col>
                 <el-col :span="2" style="text-align:center;">市</el-col>
               </el-form-item>
-              <el-form-item label="所属科室" prop="name">
-                <el-input v-model="detailForm.name"></el-input>
+              <el-form-item label="所属科室" prop="keshi">
+                <el-input v-model="detailForm.keshi"></el-input>
               </el-form-item>
-              <el-form-item label="医院地址" prop="name">
-                <el-input v-model="detailForm.name"></el-input>
+              <el-form-item label="医院地址" prop="dizhi">
+                <el-input v-model="detailForm.dizhi"></el-input>
               </el-form-item>
             </el-form>
           </el-col>
@@ -115,26 +125,26 @@
           </el-col>
           <el-col :span="7">
             <el-form :model="detailForm" ref="ruleForm" class="demo-ruleForm">
-              <el-form-item label="医生简介" prop="name">
+              <el-form-item label="医生简介" prop="jianjie">
                 <el-input
-                  v-model="detailForm.name"
+                  v-model="detailForm.jianjie"
                   type="textarea"
                   :rows="4"
                   resize="none"
                 ></el-input>
               </el-form-item>
-              <el-form-item label="工作经历" prop="name">
+              <el-form-item label="工作经历" prop="jinli">
                 <el-input
-                  v-model="detailForm.name"
+                  v-model="detailForm.jinli"
                   type="textarea"
                   :rows="4"
                   resize="none"
                 ></el-input>
               </el-form-item>
 
-              <el-form-item label="相关证明上传" prop="name">
+              <el-form-item label="相关证明上传" prop="zhengming">
                 <el-input
-                  v-model="detailForm.name"
+                  v-model="detailForm.zhengming"
                   type="textarea"
                   :rows="4"
                   resize="none"

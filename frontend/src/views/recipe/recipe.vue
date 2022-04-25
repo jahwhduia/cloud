@@ -81,7 +81,7 @@
           <span>{{ scope.row.seektime.split(" ")[0] }}</span>
         </template>
       </el-table-column>
-      <el-table-column prop="deName" label="处方" width="180">
+      <el-table-column prop="deName" label="指导建议" width="180">
         <template slot-scope="scope">
           <span>{{ scope.row.prescription }}</span>
         </template>

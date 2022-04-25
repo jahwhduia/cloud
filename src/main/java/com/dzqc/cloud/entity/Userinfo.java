@@ -43,8 +43,8 @@ public class Userinfo implements Serializable {
     private Integer state;
 
     private static final long serialVersionUID = 1L;
-
-    public Userinfo(Integer id, String username, String password, Integer roleid, String phone, String validatecode, String cid, Date birthday, String gender, Integer diType, String frontimg, String backimg, String address, String bedno, Integer departmentid, Integer doctorid, Integer nurseid, Integer instatus, Integer state) {
+    //流标识符，版本定义语句
+    public  Userinfo(Integer id, String username, String password, Integer roleid, String phone, String validatecode, String cid, Date birthday, String gender, Integer diType, String frontimg, String backimg, String address, String bedno, Integer departmentid, Integer doctorid, Integer nurseid, Integer instatus, Integer state) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -115,6 +115,7 @@ public class Userinfo implements Serializable {
     }
 
     public void setValidatecode(String validatecode) {
+
         this.validatecode = validatecode == null ? null : validatecode.trim();
     }
 

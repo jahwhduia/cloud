@@ -82,10 +82,9 @@
       </el-table-column>
 
       <el-table-column prop="done">
-        <template slot-scope="scope">
+        <template slot-scope="">
           <el-button size="mini" class="bg16d" @click="dialogFormVisible = true"
-            >解答问题</el-button
-          >
+            >解答问题</el-button>
         </template>
       </el-table-column>
     </el-table>

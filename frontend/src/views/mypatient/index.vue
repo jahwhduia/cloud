@@ -4,7 +4,7 @@
       <span
         class="check_tab"
         @click="$router.push({ path: '/doctor/patient/list' })"
-        >我的病人</span
+        >我的患者</span
       >
     </div>
     <router-view class="content"> </router-view>

@@ -17,34 +17,40 @@
               >
                 <!-- 使用 vue-router 的模式，启用该模式会在激活导航时以 index 作为 path 进行路由跳转 -->
                 <!-- 当前激活的菜单选项是当前的路径，保证刷新的时候激活样式不掉 -->
-                <el-menu-item index="/doctor/patient">
+                <!-- <el-menu-item index="/doctor/patient">
                   <i class="el-icon-s-custom"></i>
                   <span slot="title">我的病人</span>
-                </el-menu-item>
+                </el-menu-item> -->
                 <el-menu-item index="/doctor/cottoms">
                   <i class="el-icon-s-order"></i>
-                  <span slot="title">电子病例</span>
+                  <span slot="title">我的患者</span>
                 </el-menu-item>
-                <el-menu-item index="/doctor/hospitalization">
+                <!-- 原病案管理 -->
+                <!-- <el-menu-item index="/doctor/hospitalization">
                   <i class="el-icon-s-ticket"></i>
                   <span slot="title">住院管理</span>
-                </el-menu-item>
-                <el-menu-item index="/doctor/report">
-                  <i class="el-icon-document"></i>
-                  <span slot="title">报告查询</span>
-                </el-menu-item>
-                <el-menu-item index="/doctor/discharge">
+                </el-menu-item> -->
+                <!-- <el-menu-item index="/doctor/discharge">
                   <i class="el-icon-document"></i>
                   <span slot="title">出院管理</span>
-                </el-menu-item>
+                </el-menu-item> -->
                 <el-menu-item index="/doctor/recipe">
                   <i class="el-icon-edit-outline"></i>
-                  <span slot="title">处方管理</span>
+                  <span slot="title">健康指导</span>
                 </el-menu-item>
                 <el-menu-item index="/doctor/counsel">
                   <i class="el-icon-question"></i>
-                  <span slot="title">就诊咨询</span>
+                  <span slot="title">健康咨询</span>
                 </el-menu-item>
+                <el-menu-item index="/doctor/report">
+                  <i class="el-icon-document"></i>
+                  <span slot="title">微社区</span>
+                </el-menu-item>
+                <el-menu-item index="/doctor/discharge">
+                  <i class="el-icon-document"></i>
+                  <span slot="title">健康知识</span>
+                </el-menu-item>
+                <!-- 原报告查询 -->
                 <el-menu-item index="/doctor/personal">
                   <i class="el-icon-user-solid"></i>
                   <span slot="title">个人信息</span>

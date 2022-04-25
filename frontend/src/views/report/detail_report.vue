@@ -32,11 +32,9 @@
         </p>
         <p v-else>
           <el-button type="danger" round size="mini" @click="cancel"
-            >取消</el-button
-          >
+            >取消</el-button>
           <el-button type="success" round size="mini" @click="save"
-            >保存</el-button
-          >
+            >保存</el-button>
         </p>
       </el-header>
       <el-main class="main">

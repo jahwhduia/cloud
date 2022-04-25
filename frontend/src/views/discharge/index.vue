@@ -1,7 +1,7 @@
 <template>
   <div id="discharge">
     <div class="nav">
-      <span class="check_tab">出院管理</span>
+      <span class="check_tab">健康知识</span>
     </div>
     <router-view class="content"> </router-view>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div id="counsel">
     <div class="nav">
-      <span class="check_tab">就诊咨询</span>
+      <span class="check_tab">健康咨询</span>
     </div>
     <router-view class="content"> </router-view>
   </div>

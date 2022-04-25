@@ -54,7 +54,6 @@ public class UserinfoController {
         session.removeAttribute("userinfo");
         return ResultObject.success("成功注销");
     }
-
     /**
      * 用户登陆
      * @param phone 手机号
@@ -63,7 +62,6 @@ public class UserinfoController {
      */
     @PostMapping("/shiro/login")
     public ResultObject login(String phone,String code,HttpServletRequest request){
-
         HttpSession session = request.getSession();
         //从session中获取验证码
         String sessionCode = (String)session.getAttribute(phone);

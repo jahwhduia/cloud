@@ -1,7 +1,7 @@
 <template>
   <div id="recipeIndex">
     <div class="nav">
-      <span class="check_tab">处方管理</span>
+      <span class="check_tab">健康指导</span>
     </div>
     <router-view class="content"> </router-view>
   </div>

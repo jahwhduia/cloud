@@ -11,8 +11,6 @@ public class DepartmentinfoController {
 
       @Autowired
       private DepartmentinfoService departmentinfoService;
-
-
       /**
        * 获取所有的科室
        * @return 所有的科室信息
